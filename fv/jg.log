@@ -1,0 +1,536 @@
+[RUN_JG] xSanity/xSanity_update_file_.sh
+SYMBOLIC? 0
+[RUN_JG] SVA is xSanity/xSanity.sv
+[RUN_JG] HDLF is xSanity/xSanity_hdls.f
+[RUN_JG] ADD DEFINE
+====================
+====================
+[RUN_JG] TCLF is xSanity/xSanity_.tcl
+CHECK ASSUMPTION!
+
+[RUN_JG] CMDTASK: task -create mytask -copy_assumes   -regexp
+[RUN_JG] no gui
+[RUN_JG] jg -no_gui -fpv xSanity/xSanity_.tcl -proj xSanity/xSanity_jgsession_25-02-23-17_38_00
+Jasper Apps 2023.12p001 64 bits 2024.01.23 16:09:24 UTC
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2023 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc.
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+Jasper Apps Analysis Session - /sailhome/yifanpan/CS357S_project/fv/xSanity/xSanity_jgsession_25-02-23-17_38_00/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_fao".
+INFO: reading configuration file "/afs/cs.stanford.edu/u/yifanpan/.config/cadence/jasper.conf".
+% # Run JG with a TCl file: jg jg_test.tcl
+% set assert_report_incompletes 1
+1
+% set RTL_DIR /sailhome/yifanpan/CS357S_project/cva6
+/sailhome/yifanpan/CS357S_project/cva6
+% set SRCDIR /sailhome/yifanpan/CS357S_project/cva6/core
+/sailhome/yifanpan/CS357S_project/cva6/core
+% 
+% ############
+% set FPV 1
+1
+% set REACH 0
+0
+% set CUSTOMTCL 0
+0
+% ############
+% exec xSanity/xSanity_update_file_.sh
+% # Analyze RTL files
+% analyze -sv09 -f xSanity/xSanity_hdls.f -y $SRCDIR +incdir+$SRCDIR
+INFO (INL011): Processing "-f" file "/sailhome/yifanpan/CS357S_project/fv/xSanity/xSanity_hdls.f".
+[-- (VERI-1482)] Analyzing Verilog file '/cad/cadence/jasper_2023.12p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/include/cv64a6_imafdc_sv39_config_pkg.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/include/riscv_pkg.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/corev_apu/riscv-dbg/src/dm_pkg.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/include/ariane_pkg.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/corev_apu/axi/src/axi_pkg.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/corev_apu/fpga-support/rtl/SyncSpRamBeNx64.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/include/ariane_rvfi_pkg.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/include/ariane_axi_pkg.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/include/wt_cache_pkg.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/include/std_cache_pkg.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/include/axi_intf.sv'
+[-- (VERI-1482)] Analyzing Verilog file 'xSanity/xSanity_top.sv'
+[INFO (VERI-2561)] xSanity/xSanity_top.sv(635): undeclared symbol 'icache_flush_ctrl_cache', assumed default net type 'wire'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/lfsr.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/lzc.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/rr_arb_tree.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/shift_reg.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/unread.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/popcount.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/exp_backoff.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/alu.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/branch_unit.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/compressed_decoder.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/controller.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/csr_buffer.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/decoder.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/ex_stage.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/instr_realign.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/id_stage.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/issue_read_operands.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/issue_stage.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/load_unit.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/mult.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/multiplier.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/serdiv.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/perf_counters.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/ariane_regfile_ff.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/re_name.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/scoreboard.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/store_buffer.sv'
+[WARN (VERI-1875)] /sailhome/yifanpan/CS357S_project/cva6/core/store_buffer.sv(52): identifier 'commit_read_pointer_q' is used before its declaration
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/amo_buffer.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/store_unit.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/commit_stage.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/axi_shim.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/frontend/btb.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/frontend/bht.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/frontend/ras.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/frontend/instr_scan.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/frontend/instr_queue.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/frontend/frontend.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_ctrl.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_mem.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_missunit.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/cva6_icache.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_cache_subsystem.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_axi_adapter.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/sailhome/yifanpan/CS357S_project/cva6/common/local/util/sram.sv'
+% 
+% if {$REACH == 1} {
+    puts "test bboxing mfpt" 
+    #elaborate -bbox_m  {miss_prediction_fix_table} -bbox_m {reorderbuf}
+    elaborate 
+    source reach_collect.tcl
+}
+% if {$FPV == 1} {
+    puts "fpv" 
+    # Elaborates
+    #elaborate -bbox_m {wt_cache_subsystem} -bbox_m {frontend}
+    #puts "multiplier no-bbox"
+    elaborate -bbox_m {frontend}
+    #elaborate -bbox_m {frontend}
+    #stopat -env {issue_stage_i.i_scoreboard.mem_n[0].sbe.is_compressed}  
+    #elaborate
+
+
+    # Initialization
+    # Clock specification
+    clock clk_i
+    # -both_edges: ridecore 
+    reset !rst_ni
+    set_proofgrid_per_engine_max_jobs 10
+    set_proofgrid_max_jobs 30
+
+
+    #SOURCE_TCL
+    # assume -enable {.*ASSUME_W_R} -regexp
+    # assume -disable {.*ASSUME_R_W} -regexp
+
+    task -create mytask -copy_assumes   -regexp
+    task -set mytask
+
+    if { $CUSTOMTCL == 1 } {
+        puts "=========CUSTOMTCL========="
+
+        #CUSTOMTCL
+        
+        puts "=========EXIT CUSTOMTCL========="
+        exit
+        
+    } 
+    
+    puts "=============================================================="
+    puts "CHECK ASSUMPTION...."
+    puts "=============================================================="
+    set CA 0
+    set CA 1
+    #
+    set_prove_time_limit 15m
+    #SETPROVETIME
+    set_prove_per_property_time_limit 5m 
+
+    set ls [get_property_list -task mytask -include {type {assert cover} }]
+    if { [llength $ls] > 10 } { 
+        set_prove_time_limit 25m 
+        puts "PROVEN TIME 25min" }  
+
+    if { $CA == 1 } { 
+        #set_prove_time_limit 10m
+        set CONFLICT [check_assumptions -task mytask -conflict]
+        puts "=============================================================="
+        puts "CHECK ASSUMPTION CONFLICT result? $CONFLICT"
+        puts "=============================================================="
+    }  else {
+        puts "AUTOPROVE:" 
+        #set_prove_time_limit 1h
+        #set_prove_per_property_time_limit 1h
+        puts "=================================================="
+        puts " PROVE TIME LIMIT"
+        puts [get_prove_time_limit]     
+        #puts [get_prove_per_property_time_limit]
+        puts "=================================================="
+        set_engine_mode {K C Tri I N AD AM Hp B}
+
+        prove -task mytask
+        #prove -all
+    }
+    
+    puts "END"
+    report -task mytask -csv -results -file "xSanity/xSanity.csv" -force
+    exit
+}
+fpv
+[WARN (VERI-2435)] xSanity/xSanity_top.sv(455): port 'icache_areq_i' is not connected on this instance
+[WARN (VERI-1927)] xSanity/xSanity_top.sv(455): port 'icache_areq_o' remains unconnected for this instance
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/frontend.sv(18): compiling module 'frontend:(ArianeCfg='{2,32,128,32'b010,1024'b0,1024'b0,32'b011,1024'b01000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000,1024'b0100000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000001000000000000,32'b01,1024'b010000000000000000000000000000000,1024'b01000000000000000000000000000000,1'b1,1'b0,64'b0,32'b01000})'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/compressed_decoder.sv(22): compiling module 'compressed_decoder'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/decoder.sv(22): compiling module 'decoder'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/id_stage.sv(16): compiling module 'id_stage'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/re_name.sv(12): compiling module 're_name'
+[WARN (VERI-9005)] /sailhome/yifanpan/CS357S_project/cva6/core/re_name.sv(52): 6-bit index expression 'issue_instr_i.rd' is larger than the required 5 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] /sailhome/yifanpan/CS357S_project/cva6/core/re_name.sv(52): 6-bit index expression 'issue_instr_i.rd' is larger than the required 5 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] /sailhome/yifanpan/CS357S_project/cva6/core/re_name.sv(57): 6-bit index expression 'issue_instr_i.rs1' is larger than the required 5 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] /sailhome/yifanpan/CS357S_project/cva6/core/re_name.sv(59): 6-bit index expression 'issue_instr_i.rs2' is larger than the required 5 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] /sailhome/yifanpan/CS357S_project/cva6/core/re_name.sv(65): 6-bit index expression 'issue_instr_i.rd' is larger than the required 5 bits. This might lead to an out-of-bound access
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/popcount.sv(19): compiling module 'popcount:(INPUT_WIDTH=32'b010)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/scoreboard.sv(15): compiling module 'scoreboard:(NR_ENTRIES=32'b0100,NR_WB_PORTS=32'b0100,NR_COMMIT_PORTS=32'b010)'
+[WARN (VERI-1060)] /sailhome/yifanpan/CS357S_project/cva6/core/scoreboard.sv(397): 'initial' construct is ignored
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/scoreboard.sv(163): system task 'display' is ignored for synthesis
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/scoreboard.sv(190): system task 'display' is ignored for synthesis
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/scoreboard.sv(217): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/rr_arb_tree.sv(34): compiling module 'rr_arb_tree:(NumIn=32'b0101,DataType=fu_t_ariane_pkg,ExtPrio=1'b1,AxiVldRdy=1'b1)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/rr_arb_tree.sv(34): compiling module 'rr_arb_tree:(NumIn=32'b01000,DataWidth=32'b01000000,ExtPrio=1'b1,AxiVldRdy=1'b1)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/ariane_regfile_ff.sv(25): compiling module 'ariane_regfile:(DATA_WIDTH=32'b01000000,NR_WRITE_PORTS=32'b010,ZERO_REG_ZERO=1'b1)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/issue_read_operands.sv(17): compiling module 'issue_read_operands:(NR_COMMIT_PORTS=32'b010)'
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/issue_read_operands.sv(451): expression size 3 truncated to fit in target size 1
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/issue_stage.sv(17): compiling module 'issue_stage:(NR_ENTRIES=32'b0100,NR_WB_PORTS=32'b0100,NR_COMMIT_PORTS=32'b010)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/alu.sv(21): compiling module 'alu'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/branch_unit.sv(15): compiling module 'branch_unit'
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/branch_unit.sv(64): system task 'display' is ignored for synthesis
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_buffer.sv(17): compiling module 'csr_buffer'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/multiplier.sv(18): compiling module 'multiplier'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/lzc.sv(26): compiling module 'lzc:(WIDTH=32'b01000000,MODE=1'b1)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/serdiv.sv(18): compiling module 'serdiv'
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/serdiv.sv(89): expression size 65 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/serdiv.sv(110): expression size 32 truncated to fit in target size 7
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/serdiv.sv(111): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/serdiv.sv(150): expression size 32 truncated to fit in target size 7
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/mult.sv(3): compiling module 'mult'
+[WARN (VERI-1330)] /sailhome/yifanpan/CS357S_project/cva6/core/mult.sv(133): actual bit length 64 differs from formal bit length 32 for port 'operand'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(15): compiling module 'ord_sram:(NUM_WORDS=32'b0100000)'
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(65): system task 'display' is ignored for synthesis
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(67): system task 'display' is ignored for synthesis
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/store_buffer.sv(17): compiling module 'store_buffer'
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/store_buffer.sv(52): system task 'display' is ignored for synthesis
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/store_buffer.sv(120): expression size 3 truncated to fit in target size 2
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/store_buffer.sv(223): expression size 3 truncated to fit in target size 2
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/amo_buffer.sv(17): compiling module 'amo_buffer'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DEPTH=32'b01,dtype=amo_op_t_amo_buffer)'
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(79): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(81): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(90): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(92): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/store_unit.sv(16): compiling module 'store_unit'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/load_unit.sv(16): compiling module 'load_unit:(ArianeCfg='{2,32,128,32'b010,1024'b0,1024'b0,32'b011,1024'b01000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000,1024'b0100000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000001000000000000,32'b01,1024'b010000000000000000000000000000000,1024'b01000000000000000000000000000000,1'b1,1'b0,64'b0,32'b01000})'
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/load_unit.sv(57): system task 'display' is ignored for synthesis
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/load_unit.sv(351): expression size 32 truncated to fit in target size 3
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(685): compiling module 'lsu_bypass'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(116): compiling module 'load_store_unit:(ASID_WIDTH=32'b010000,ArianeCfg='{2,32,128,32'b010,1024'b0,1024'b0,32'b011,1024'b01000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000,1024'b0100000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000001000000000000,32'b01,1024'b010000000000000000000000000000000,1024'b01000000000000000000000000000000,1'b1,1'b0,64'b0,32'b01000})'
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(315): expression size 52 truncated to fit in target size 44
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(355): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(364): system task 'display' is ignored for synthesis
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(367): system task 'display' is ignored for synthesis
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(370): system task 'display' is ignored for synthesis
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(375): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1330)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(420): actual bit length 16 differs from formal bit length 5 for port 'addr_i'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/shift_reg.sv(16): compiling module 'shift_reg:(dtype=logic[259:0],Depth=32'b01)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/shift_reg.sv(16): compiling module 'shift_reg:(dtype=logic[195:0],Depth=32'b0)'
+[WARN (VDB-1002)] /sailhome/yifanpan/CS357S_project/cva6/core/load_store_unit.sv(339): net 'dcache_req_ports_i_st.data_rvalid' does not have a driver
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/ex_stage.sv(17): compiling module 'ex_stage:(ASID_WIDTH=32'b010000,ArianeCfg='{2,32,128,32'b010,1024'b0,1024'b0,32'b011,1024'b01000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000,1024'b0100000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000001000000000000,32'b01,1024'b010000000000000000000000000000000,1024'b01000000000000000000000000000000,1'b1,1'b0,64'b0,32'b01000})'
+[WARN (VDB-1002)] /sailhome/yifanpan/CS357S_project/cva6/core/ex_stage.sv(111): net 'amo_resp_i.result[63]' does not have a driver
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/commit_stage.sv(16): compiling module 'commit_stage:(NR_COMMIT_PORTS=32'b010)'
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/commit_stage.sv(283): system task 'display' is ignored for synthesis
+[WARN (VERI-1142)] /sailhome/yifanpan/CS357S_project/cva6/core/commit_stage.sv(292): system task 'display' is ignored for synthesis
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(16): compiling module 'csr_regfile:(AsidWidth=16,NrCommitPorts=32'b010,NrPMPEntries=32'b01000)'
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(292): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(293): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(294): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(295): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(296): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(297): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(298): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(299): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(300): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(301): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(302): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(303): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(304): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(305): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(306): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(307): expression size 72 truncated to fit in target size 64
+[WARN (VERI-1899)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(854): 'mask' inside always_comb block does not represent combinational logic
+[WARN (VERI-1995)] /sailhome/yifanpan/CS357S_project/cva6/core/csr_regfile.sv(934): unique/priority if/case is not full; Use "elaborate -extract_case_assertions" to check whether the user-defined unique cases are overlapping
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/controller.sv(16): compiling module 'controller'
+[INFO (VERI-1018)] xSanity/xSanity_top.sv(27): compiling module 'ariane'
+[WARN (VERI-8028)] xSanity/xSanity_top.sv(371): missing/open ports on instance ex_stage_i of module ex_stage
+[WARN (VERI-1209)] xSanity/xSanity_top.sv(508): expression size 32 truncated to fit in target size 1
+[WARN (VDB-1002)] xSanity/xSanity_top.sv(235): net 'tmp_icache_dreq_cache_if.ready' does not have a driver
+[WARN (VDB-1002)] xSanity/xSanity_top.sv(243): net 'amo_resp.ack' does not have a driver
+[WARN (VDB-1013)] xSanity/xSanity_top.sv(455): input port 'icache_areq_i.fetch_req' is not connected on this instance
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/instr_realign.sv(23): compiling module 'instr_realign'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/perf_counters.sv(16): compiling module 'perf_counters'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/unread.sv(16): compiling module 'unread'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/btb.sv(17): compiling module 'btb'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/bht.sv(17): compiling module 'bht'
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/bht.sv(69): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/bht.sv(74): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/bht.sv(77): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/bht.sv(79): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/ras.sv(17): compiling module 'ras'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/instr_scan.sv(18): compiling module 'instr_scan'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/lzc.sv(26): compiling module 'lzc:(WIDTH=32'b010)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/instr_queue.sv(46): compiling module 'instr_queue'
+[WARN (VERI-9005)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/instr_queue.sv(182): 32-bit index expression '(i + idx_is_q)' is larger than the required 2 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] /sailhome/yifanpan/CS357S_project/cva6/core/frontend/instr_queue.sv(183): 32-bit index expression '(i + idx_is_q)' is larger than the required 2 bits. This might lead to an out-of-bound access
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DEPTH=32'b0100,dtype=instr_data_t_instr_queue)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DATA_WIDTH=32'b01000000,DEPTH=32'b0100)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/lzc.sv(26): compiling module 'lzc:(WIDTH=32'b0100)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/lfsr.sv(22): compiling module 'lfsr:(LfsrWidth=32'b0100,OutWidth=32'b010)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/corev_apu/fpga-support/rtl/SyncSpRamBeNx64.sv(28): compiling module 'SyncSpRamBeNx64:(ADDR_WIDTH=8,DATA_DEPTH=32'sb0100000000,SIM_INIT=1)'
+[INFO (VERI-2571)] /sailhome/yifanpan/CS357S_project/cva6/corev_apu/fpga-support/rtl/SyncSpRamBeNx64.sv(62): extracting RAM for identifier 'Mem_DP'
+[WARN (VERI-9033)] /sailhome/yifanpan/CS357S_project/cva6/corev_apu/fpga-support/rtl/SyncSpRamBeNx64.sv(62): array Mem_DP (size 16384) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/local/util/sram.sv(21): compiling module 'sram:(DATA_WIDTH=32'b0110101,NUM_WORDS=32'sb0100000000)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/local/util/sram.sv(21): compiling module 'sram:(DATA_WIDTH=32'b010000000,NUM_WORDS=32'sb0100000000)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/cva6_icache.sv(28): compiling module 'cva6_icache:(RdTxId=2'b0,ArianeCfg='{2,32,128,32'b010,1024'b0,1024'b0,32'b011,1024'b01000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000,1024'b0100000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000001000000000000,32'b01,1024'b010000000000000000000000000000000,1024'b01000000000000000000000000000000,1'b1,1'b0,64'b0,32'b01000})'
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/cva6_icache.sv(111): expression size 66 truncated to fit in target size 64
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/cva6_icache.sv(121): expression size 66 truncated to fit in target size 4
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/cva6_icache.sv(329): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1330)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/cva6_icache.sv(341): actual bit length 3 differs from formal bit length 2 for port 'in'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/lzc.sv(26): compiling module 'lzc:(WIDTH=32'b011)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/lzc.sv(26): compiling module 'lzc:(WIDTH=32'b01000)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/lfsr.sv(22): compiling module 'lfsr:(LfsrWidth=32'b01000,OutWidth=32'b011)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/exp_backoff.sv(23): compiling module 'exp_backoff:(Seed=32'b011)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_missunit.sv(17): compiling module 'wt_dcache_missunit:(Axi64BitCompliant=1'b1,AmoTxId=2'b01,NumPorts=32'b011)'
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_missunit.sv(116): expression size 32 truncated to fit in target size 8
+[WARN (VERI-9005)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_missunit.sv(215): 32-bit index expression '((amo_req_i.operand_a[2] * 32) + 31)' is larger than the required 6 bits. This might lead to an out-of-bound access
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_missunit.sv(260): expression size 32 truncated to fit in target size 3
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv(52): compiling module 'wt_dcache_wbuffer:(ArianeCfg='{2,32,128,32'b010,1024'b0,1024'b0,32'b011,1024'b01000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000,1024'b0100000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000001000000000000,32'b01,1024'b010000000000000000000000000000000,1024'b01000000000000000000000000000000,1'b1,1'b0,64'b0,32'b01000})'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DATA_WIDTH=32'b010,DEPTH=32'b0100)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/rr_arb_tree.sv(34): compiling module 'rr_arb_tree:(NumIn=32'b0100,DataWidth=32'b01,LockIn=1'b1)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/rr_arb_tree.sv(34): compiling module 'rr_arb_tree:(NumIn=32'b01000,DataType=wbuffer_t_wt_cache_pkg,LockIn=1'b1)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/rr_arb_tree.sv(34): compiling module 'rr_arb_tree:(NumIn=32'b01000,DataType=wbuffer_t_wt_cache_pkg)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/local/util/sram.sv(21): compiling module 'sram:(DATA_WIDTH=32'b01000000000,NUM_WORDS=32'sb0100000000)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_mem.sv(29): compiling module 'wt_dcache_mem:(Axi64BitCompliant=1'b1,NumPorts=32'b011)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/rr_arb_tree.sv(34): compiling module 'rr_arb_tree:(NumIn=32'b011,DataWidth=32'b01)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache_ctrl.sv(16): compiling module 'wt_dcache_ctrl:(RdTxId=2'b01,ArianeCfg='{2,32,128,32'b010,1024'b0,1024'b0,32'b011,1024'b01000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000,1024'b0100000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000001000000000000,32'b01,1024'b010000000000000000000000000000000,1024'b01000000000000000000000000000000,1'b1,1'b0,64'b0,32'b01000})'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_dcache.sv(16): compiling module 'wt_dcache:(RdAmoTxId=2'b01,ArianeCfg='{2,32,128,32'b010,1024'b0,1024'b0,32'b011,1024'b01000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000,1024'b0100000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000001000000000000,32'b01,1024'b010000000000000000000000000000000,1024'b01000000000000000000000000000000,1'b1,1'b0,64'b0,32'b01000})'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/axi_shim.sv(22): compiling module 'axi_shim:(AxiNumWords=32'b010,AxiIdWidth=32'b0100)'
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/axi_shim.sv(107): expression size 32 truncated to fit in target size 1
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_axi_adapter.sv(17): compiling module 'wt_axi_adapter'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/rr_arb_tree.sv(34): compiling module 'rr_arb_tree:(NumIn=32'b010,DataWidth=32'b01,AxiVldRdy=1'b1,LockIn=1'b1)'
+[WARN (VERI-1209)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_axi_adapter.sv(211): expression size 9 truncated to fit in target size 6
+[WARN (VERI-1995)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_axi_adapter.sv(224): unique/priority if/case is not full; Use "elaborate -extract_case_assertions" to check whether the user-defined unique cases are overlapping
+[WARN (VERI-1995)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_axi_adapter.sv(227): unique/priority if/case is not full; Use "elaborate -extract_case_assertions" to check whether the user-defined unique cases are overlapping
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DEPTH=32'b010,dtype=icache_req_t_wt_cache_pkg)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(DEPTH=32'b010,dtype=dcache_req_t_wt_cache_pkg)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/common/submodules/common_cells/src/fifo_v3.sv(13): compiling module 'fifo_v3:(FALL_THROUGH=1'b1,DATA_WIDTH=32'b0101,DEPTH=32'b0100)'
+[INFO (VERI-1018)] /sailhome/yifanpan/CS357S_project/cva6/core/cache_subsystem/wt_cache_subsystem.sv(22): compiling module 'wt_cache_subsystem'
+INFO (ISW003): Top module name is "ariane".
+WARNING (WNL008): Module "frontend" is blackboxed due to analyze/elaborate bbox_m or compilation configuration. All instances will be blackboxed.
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          80 (7 packages)
+  Single run mode                         On
+  Pipeline                                On (72 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      67 (60 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+WARNING (WNL018): /sailhome/yifanpan/CS357S_project/cva6/core/multiplier.sv(51): multiplication operator mult_65s_65s (size 130) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): /sailhome/yifanpan/CS357S_project/cva6/core/multiplier.sv(74): multiplication operator mult_65s_65s (size 130) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst_ni".
+WARNING (WPM025): Property "ariane.ex_stage_i.lsu_i.i_store_unit.store_buffer_i.commit_and_flush:precondition1", a related cover of "ariane.ex_stage_i.lsu_i.i_store_unit.store_buffer_i.commit_and_flush", was not copied to the new task.
+WARNING (WPM025): Property "ariane.ex_stage_i.lsu_i.i_store_unit.store_buffer_i.commit_buffer_overflow:precondition1", a related cover of "ariane.ex_stage_i.lsu_i.i_store_unit.store_buffer_i.commit_buffer_overflow", was not copied to the new task.
+WARNING (WPM025): Property "ariane.ex_stage_i.lsu_i.i_store_unit.store_buffer_i.speculative_buffer_overflow:precondition1", a related cover of "ariane.ex_stage_i.lsu_i.i_store_unit.store_buffer_i.speculative_buffer_overflow", was not copied to the new task.
+WARNING (WPM025): Property "ariane.ex_stage_i.lsu_i.i_store_unit.store_buffer_i.speculative_buffer_underflow:precondition1", a related cover of "ariane.ex_stage_i.lsu_i.i_store_unit.store_buffer_i.speculative_buffer_underflow", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard._assume_3:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard._assume_3", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard._assume_4:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard._assume_4", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard._assume_5:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard._assume_5", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[0].genblk1[0]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[0].genblk1[0]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[0].genblk1[1]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[0].genblk1[1]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[0].genblk1[2]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[0].genblk1[2]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[0].genblk1[3]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[0].genblk1[3]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[1].genblk1[0]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[1].genblk1[0]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[1].genblk1[1]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[1].genblk1[1]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[1].genblk1[2]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[1].genblk1[2]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[1].genblk1[3]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[1].genblk1[3]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[2].genblk1[0]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[2].genblk1[0]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[2].genblk1[1]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[2].genblk1[1]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[2].genblk1[2]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[2].genblk1[2]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[2].genblk1[3]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[2].genblk1[3]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[3].genblk1[0]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[3].genblk1[0]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[3].genblk1[1]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[3].genblk1[1]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[3].genblk1[2]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[3].genblk1[2]._assume_6", was not copied to the new task.
+WARNING (WPM025): Property "ariane.issue_stage_i.i_scoreboard.genblk5[3].genblk1[3]._assume_6:precondition1", a related cover of "ariane.issue_stage_i.i_scoreboard.genblk5[3].genblk1[3]._assume_6", was not copied to the new task.
+==============================================================
+CHECK ASSUMPTION....
+==============================================================
+WARNING (WPM042): No properties matched the specified filters.
+INFO (IPF036): Starting proof on task: "mytask", 1 properties to prove with 0 already proven/unreachable
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 9654 of 11771 design flops, 0 of 64 design latches, 49 of 49 internal elements.
+INFO (IRS039): Reset analysis complete.
+INFO (IPF031): Settings used for proof thread 0:
+    orchestration                 = off
+    time_limit                    = 900s
+    per_property_time_limit       = 300s * 10 ^ scan
+    engine_mode                   = Q1 Q2 Q3 
+    proofgrid_per_engine_max_jobs = 1
+    max engine jobs               = Q1 Q2 Q3, total 3
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+0: Using multistage preprocessing
+0: Starting reduce
+0: Finished reduce in 0.129s
+0.0.PRE: Performing Proof Simplification...
+0.0.Q1: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Q1: Proof Simplification Iteration 1	[0.00 s]
+0.0.Q1: Proof Simplification Iteration 2	[0.05 s]
+0.0.Q1: Proof Simplification Iteration 3	[0.08 s]
+0.0.Q1: Proof Simplification Iteration 4	[0.10 s]
+0.0.Q1: Proof Simplification Iteration 5	[0.12 s]
+0.0.Q1: Proof Simplification Iteration 6	[0.14 s]
+0.0.Q1: Proof Simplification Iteration 7	[0.16 s]
+0.0.PRE: Proof Simplification completed in 0.24 s
+0: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0: =============================== ProofGrid start ===============================
+0: ProofGrid usable level: 4294967295
+0: Initial ProofGrid level: 1
+0: ProofGrid is starting event handling
+0.0.Q3: Proofgrid shell started at 76647@cafe-jg.stanford.edu(local) jg_76521_cafe-jg.stanford.edu_1
+0.0.Q3: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Q1: Proofgrid shell started at 76645@cafe-jg.stanford.edu(local) jg_76521_cafe-jg.stanford.edu_1
+0.0.Q2: Proofgrid shell started at 76646@cafe-jg.stanford.edu(local) jg_76521_cafe-jg.stanford.edu_1
+0.0.Q3: Seed 7, 50%
+0.0.Q2: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Q1: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Q3: Trace Attempt  1	[0.07 s]
+0.0.Q1: Trace Attempt  1	[0.08 s]
+0.0.Q2: Trace Attempt  1	[0.10 s]
+0.0.Q1: Cycle 1, State Sig: a8c877d8
+0.0.Q1: Trace Attempt  2	[0.13 s]
+0.0.Q2: Trace Attempt  2	[0.13 s]
+0.0.Q3: Cycle 1, State Sig: 6d67438a
+0.0.Q3: Trace Attempt  2	[0.19 s]
+0.0.Q3: Cycle 2, State Sig: 978b422
+0.0.Q3: Trace Attempt  3	[0.19 s]
+0.0.Q3: Trace Attempt  4	[0.19 s]
+0.0.Q3: Cycle 4, State Sig: 54d25c88
+0.0.Q3: Trace Attempt  5	[0.20 s]
+0.0.Q2: Trace Attempt  3	[0.17 s]
+0.0.Q3: Cycle 8, State Sig: cd76726b
+0.0.Q3: Cycle 16, State Sig: 187bb6dd
+0.0.Q1: Cycle 2, State Sig: 5b4965a1
+0.0.Q1: Trace Attempt  3	[0.21 s]
+0.0.Q2: Trace Attempt  4	[0.22 s]
+0.0.Q3: Cycle 32, State Sig: f3f2aed0
+0.0.Q2: Trace Attempt  5	[0.29 s]
+0.0.Q3: Cycle 64, State Sig: 9f3c016e
+0.0.Q1: Trace Attempt  4	[0.35 s]
+0.0.Q1: Requesting engine job to terminate
+0.0.Q2: Requesting engine job to terminate
+0.0.Q3: Requesting engine job to terminate
+INFO (IPF144): 0: Initiating shutdown of proof [0.48 s]
+0.0.Q2: A trace with 4+1 cycles was found (stem + loop). [0.42 s]
+INFO (IPF057): 0.0.Q2: The property ":noConflict" was proven in 0.45 s.
+0.0.Q2: All properties either determined or skipped. [0.44 s]
+0.0.Q2: Exited with Success (@ 0.48 s)
+0.0.Q3: Trace Attempt 109	[0.47 s]
+0.0.Q3: Interrupted. [0.49 s]
+0.0.Q3: Exited with Success (@ 0.50 s)
+0: ProofGrid usable level: 0
+0.0.Q1: Interrupted. [0.68 s]
+0.0.Q1: Exited with Success (@ 0.72 s)
+0: --------------------------------------------------------------
+ProofGrid Summary (utilization 86.35 %)
+--------------------------------------------------------------
+     engines started                               :     3
+     engine jobs started                           :     3
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+     Q1        0.09        0.44        0.00       83.33 %
+     Q2        0.08        0.44        0.00       85.06 %
+     Q3        0.05        0.47        0.00       90.72 %
+    all        0.07        0.45        0.00       86.35 %
+
+    Total time in state (seconds)
+    -----------------------------------------
+            Pending     Running        Dead  
+    -----------------------------------------
+               0.21        1.34        0.00
+
+    Data read    : 166.78 kiB
+    Data written : 2.91 kiB
+
+0: All pending notifications were processed.
+INFO (IPF061): 0: Some targets were skipped during proof.
+INFO (IPF059): 0: Completed proof on task: "mytask"
+==============================================================
+CHECK ASSUMPTION CONFLICT result? no_conflict
+==============================================================
+END
+[mytask] % INFO (IPL005): Received request to exit from the console.
+INFO (IPL014): Waiting for the Tcl-thread to exit.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.
+INFO (IPL018): The peak resident set memory use for this session was 0.404 GB.
+INFO (IPL015): The Tcl-thread exited with status 0.
+INFO (IPL016): Exiting the analysis session with status 0.
