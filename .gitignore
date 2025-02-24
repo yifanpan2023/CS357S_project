@@ -20,7 +20,6 @@ build/*
 /Bender.local
 build/
 *.vcd
-*.log
 *.out
 *.jou
 *.o

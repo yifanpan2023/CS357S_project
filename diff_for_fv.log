@@ -1,0 +1,39 @@
+cva6/core/csr_buffer.sv:    input  logic [riscv::VLEN-1:0]   pc_i,           // for FVT
+cva6/core/csr_buffer.sv:        logic [riscv::VLEN-1:0]   pc;           // for FVT
+cva6/core/csr_buffer.sv:            csr_reg_n.pc          = pc_i;   // for FVT
+cva6/core/ex_stage.sv:        .pc_i           ( pc_i          ),   // for FVT
+cva6/core/ex_stage.sv:        .pc_i            ( pc_i          ),   // for FVT
+cva6/core/ex_stage.sv:        .pc_i                  ( pc_i     ),   // for FVT
+cva6/core/include/ariane_pkg.sv:        logic [riscv::VLEN-1:0]   pc;      // for FVT
+cva6/core/include/ariane_pkg.sv:        // for FVT
+cva6/core/issue_read_operands.sv:    logic                 vld_o; // for FVT
+cva6/core/issue_read_operands.sv:         fpu_rm_q | csr_valid_q | branch_valid_q); // for FVT
+cva6/core/load_store_unit.sv:   input  logic [riscv::VLEN-1:0]        pc_i,                     // for FVT
+cva6/core/load_store_unit.sv:    input  logic [riscv::VLEN-1:0]   pc_i,                     // for FVT
+cva6/core/load_store_unit.sv:    wire [riscv::VLEN-1:0]    load_pc_o;                 // for FVT pc of load that is to be write back
+cva6/core/load_store_unit.sv:    logic [riscv::VLEN-1:0]   ld_pc; // for FVT
+cva6/core/load_store_unit.sv:    wire [riscv::VLEN-1:0]  ord_sram_pc_i = sel_lsu ? dcache_req_ports_o_st.pc : dcache_req_ports_o_ld.pc; // for FVT
+cva6/core/load_store_unit.sv:     , pc_i  // for FVT 
+cva6/core/load_unit.sv:        logic [riscv::VLEN-1:0] ld_pc;   // for FVT
+cva6/core/load_unit.sv:    assign in_data = {lsu_ctrl_i.trans_id, lsu_ctrl_i.vaddr[2:0], lsu_ctrl_i.operator, lsu_ctrl_i.pc}; // for FVT
+cva6/core/load_unit.sv:        pc_o = load_data_q.ld_pc;   // for FVT
+cva6/core/multiplier.sv:    input  logic [riscv::VLEN-1:0]   pc_i,                     // for FVT
+cva6/core/multiplier.sv:    logic [riscv::VLEN-1:0]      pc_q;                      // for FVT
+cva6/core/multiplier.sv:            pc_q         <= pc_i;                   // for FVT
+cva6/core/mult.sv:    input  logic [riscv::VLEN-1:0]   pc_i,                     // for FVT
+cva6/core/mult.sv:    logic [riscv::VLEN-1:0]   div_pc;           // for FVT
+cva6/core/mult.sv:        .pc_i              ( pc_i                 ),   // for FVT
+cva6/core/mult.sv:        .pc_i        ( pc_i                 ),   // for FVT
+cva6/core/mult.sv:        .pc_o        ( div_pc               ),   // for FVT
+cva6/core/serdiv.sv:  input  logic [riscv::VLEN-1:0]    pc_i,                     // for FVT
+cva6/core/serdiv.sv:  output logic [riscv::VLEN-1:0]    pc_o,                     // for FVT
+cva6/core/serdiv.sv:  logic [riscv::VLEN-1:0]   pc_q, pc_d;                    // for FVT
+cva6/core/serdiv.sv:  assign pc_d = (load_en) ? pc_i : pc_q;                // for FVT
+cva6/core/serdiv.sv:  assign pc_o = pc_q;                                   // for FVT
+cva6/core/store_buffer.sv:    input  logic [riscv::VLEN-1:0]    pc_i,          // for FVT
+cva6/core/store_buffer.sv:        logic [riscv::VLEN-1:0] pc;         // for FVT
+cva6/core/store_buffer.sv:    assign req_port_o_tmp.pc            = commit_queue_q[commit_read_pointer_q].pc; // for FVT
+cva6/core/store_unit.sv:    logic [riscv::VLEN-1:0] st_pc_n, st_pc_q;    // for FVT
+cva6/core/store_unit.sv:        st_pc_n                = lsu_ctrl_i.pc;         // for FVT
+cva6/core/store_unit.sv:            st_pc_q        <= '0;           // for FVT
+cva6/core/store_unit.sv:            st_pc_q        <= st_pc_n;          // for FVT
