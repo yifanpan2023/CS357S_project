@@ -1,7 +1,7 @@
 # Run JG with a TCl file: jg jg_test.tcl
 set assert_report_incompletes 1
-set RTL_DIR /sailhome/yifanpan/syncLC/CS357S_project/cva6
-set SRCDIR /sailhome/yifanpan/syncLC/CS357S_project/cva6/core
+set RTL_DIR /sailhome/yifanpan/CS357S_project/cva6
+set SRCDIR /sailhome/yifanpan/CS357S_project/cva6/core
 
 ############
 set FPV 1
